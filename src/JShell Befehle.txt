@@ -1,3 +1,5 @@
+jshell -R-ea 
+
 /open
 /exit 
 /methods

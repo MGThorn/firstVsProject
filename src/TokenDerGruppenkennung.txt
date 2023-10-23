@@ -1,0 +1,36 @@
+new Random().ints(3,'A','Z'+1).mapToObj(i ->(char)i).toArray()
+
+
+
+kw = Keyword, id = Identifier, lit=Literal, op = Operator, sp = Seperator, 
+
+new     kw  neue 
+Random  id  Zufällige objekte
+(       sp
+)       sp
+.       sp
+ints    id  vom Typen int werden erstellt
+.       sp
+(       sp
+3       lit drei ints sollen dabei erstellt werden
+,       sp
+'A'     lit im Bereich von A
+,       sp
+'Z'     lit 
++       op
+1       lit bis Z+1
+)       sp
+.       sp
+mapToObj id die Zahlen Map wird zu einem Objekt 
+(       sp
+i       id wobei jedem int i
+->      op 
+(       sp
+char    kw ein Char zugeordnet wird
+)       sp
+i       id
+)       sp
+.       sp
+toArray id die Map wird zu einem Array gemacht
+(       sp
+)       sp
