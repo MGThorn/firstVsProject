@@ -10,3 +10,4 @@ Var y->**b** | SonderFall3    | sonderFall4  | zwanzig | dreißig| ...
 
 ### Zahlnamenstring zs : **a**+ "hundert" + c + "und" + **b**
 
+#### SonderFall1 zs : c + "und" + **b**
