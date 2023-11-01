@@ -1,0 +1,3 @@
+int quersumme(int i){
+        return i > 10 ? quersumme(i/10) : i+=i;
+    }

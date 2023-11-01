@@ -1,3 +1,4 @@
+package Praktikum_10_18;
 return new Random().ints(3,'A','Z'+1).mapToObj(i ->(char)i).toArray()
 
 void swap(int[] nums, int i, int j) {

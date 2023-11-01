@@ -1,3 +1,6 @@
+package Praktikum_10_25;
+
+public class Bubblesort{
 void swap(int[] nums, int i, int j) {
     assert i >= 0 && i < nums.length;
     assert j >= 0 && j < nums.length;
@@ -20,4 +23,5 @@ boolean bubble(int[] numbers) {
 int[] bubblesort(int... numbers) {
     while (bubble(numbers));
     return numbers;
+}
 }
