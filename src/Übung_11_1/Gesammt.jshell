@@ -1,12 +1,11 @@
-package Übung_11_1;
+int temp =0;  
 
-public class Gesammt {
-    int temp;
     boolean isGerade(int i){
         return i%2 == 0 ? true : false;
     }
-
+    
     int quersumme(int i){
+        
         if (i < 10) {
             return temp+i;
         }else{
@@ -15,7 +14,7 @@ public class Gesammt {
         }
     }
 
-    int max(int [] arr){
+    int maxInt(int [] arr){
         int currMax =0;
         for (int i : arr) {
             if(currMax<i){
@@ -41,5 +40,3 @@ public class Gesammt {
         }
         return arr;
     }
-
-}
