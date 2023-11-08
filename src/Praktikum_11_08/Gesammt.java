@@ -1,7 +1,7 @@
 package Praktikum_11_08;
 
 public class Gesammt {
-    boolean isPrime(int z){
+    public boolean isPrime(int z){
         for(int i=2; i < z; i++){
             if(z%i==0){
                 return false;
@@ -11,7 +11,7 @@ public class Gesammt {
     }
 
     
-    boolean isPrimeTest(int [] primes){
+    public boolean isPrimeTest(int [] primes){
         for (int i : primes) {
             if (!isPrime(i)) {
                 return false;
@@ -20,7 +20,7 @@ public class Gesammt {
         return true;
     }
 
-    int[] primes(int n){
+    public int[] primes(int n){
         int primeCounter = 0;
         int currentNumber = 0;
         int [] primeList = new int[n];
@@ -33,15 +33,15 @@ public class Gesammt {
         }
         return primeList;
     }
-    boolean isPrimeFast(int[] primes, int n, int number){
+    public boolean isPrimeFast(int[] primes, int n, int number){
         for (int i = 1; i < n; i++) {
-            if (!(number%primes[i]==0)) {
-                return true;
+            if (number%primes[i]==0) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
-    int[] primesFast1(int n, int [] primes){
+    public int[] primesFast1(int n, int [] primes){
         int primeCounter = 0;
         int currentNumber = 1;
         int [] primeList = new int[n];
@@ -54,10 +54,10 @@ public class Gesammt {
         }
         return primeList;
     }
-    int[] primesFast(int n){
+    public int[] primesFast(int n){
         //Warnings not working!!
         int primeCounter = 1;
-        int currentNumber = 1;
+        int currentNumber = 3;
         int [] primeList = new int[n];
         primeList[0] = 2;
 
@@ -70,7 +70,7 @@ public class Gesammt {
         return primeList;
     }
 
-    long run(int n, int [] primes) {
+    public long run(int n, int [] primes) {
         final long timeStart = System.currentTimeMillis();
         primesFast1(n, primes);
         final long timeEnd = System.currentTimeMillis();
