@@ -12,6 +12,7 @@ public class Gesammt {
 
     
     public boolean isPrimeTest(int [] primes){
+
         for (int i : primes) {
             if (!isPrime(i)) {
                 return false;
@@ -34,6 +35,8 @@ public class Gesammt {
         return primeList;
     }
     public boolean isPrimeFast(int[] primes, int n, int number){
+        //TODO test assert (number < primes[n-1] * primes[n-1]);
+
         for (int i = 1; i < n; i++) {
             if (number%primes[i]==0) {
                 return false;
@@ -55,19 +58,18 @@ public class Gesammt {
         return primeList;
     }
     public int[] primesFast(int n){
-        //Warnings not working!!
         int primeCounter = 1;
         int currentNumber = 3;
-        int [] primeList = new int[n];
-        primeList[0] = 2;
+        int [] primes = new int[n];
+        primes[0] = 2;
 
         while(primeCounter<n){
-            if (isPrimeFast(primeList , primeCounter-1 ,currentNumber)) {
-                primeList[primeCounter++] = currentNumber;
+            if (isPrimeFast(primes , primeCounter-1 ,currentNumber)) {
+                primes[primeCounter++] = currentNumber;
             }
             currentNumber+=2;
         }
-        return primeList;
+        return primes;
     }
 
     public long run(int n, int [] primes) {
