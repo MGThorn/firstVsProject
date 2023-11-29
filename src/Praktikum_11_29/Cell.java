@@ -1,3 +1,5 @@
+
+
 public class Cell {
     private boolean alive;
     int cellNumber;
