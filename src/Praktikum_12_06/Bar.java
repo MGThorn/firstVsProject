@@ -1,3 +1,5 @@
+package Praktikum_12_06;
+
 public class Bar {
     int size;
     final int MAX_SIZE = 40;

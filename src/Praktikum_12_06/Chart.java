@@ -1,3 +1,5 @@
+package Praktikum_12_06;
+
 public class Chart {
     Bar[] bars;
     int index;
