@@ -1,0 +1,8 @@
+Verwendung:
+Zwei Rollen zur Verwendung:
+Nutzer, Warter
+    - von unten Rolle einfügen
+    - Rolle hochschieben haltebolzen eindrücken
+    - Nächste Rolle einfügen
+    - wenn die Rolle leer ist kann diese nach unten Ausgeworfen werden und die nächste Rolle rückt nach
+
